@@ -164,6 +164,7 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
+        $('#btnD').prop('disabled', false);
         
     }
 
@@ -203,6 +204,9 @@
         $("#remain").html("残り時間:"+period);
         
     }
+    function btnDClick(e){
+        
+    }
     
  
     // 繰り返し実行する処理
@@ -232,8 +236,11 @@
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
     <button id="btnA">Start</button>  
-    <button id="btnB">Stop</button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-    <button id="btnC">Set</button>  
+    <button id="btnB">Stop</button> 
+    <button id="btnC">Set</button> 
+    <button id="btnD">Stop</button> 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+     
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 </body>
