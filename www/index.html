@@ -38,6 +38,10 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+         $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
         init();
     });
     
@@ -181,6 +185,15 @@
         audio.src="pin.wav";
         audio.play();
     }
+     function alarm2(){
+        var canvas=$("#mycanvas")[0];
+        var ctx=canvas.getContext("2d");
+        var img=new Image();
+        img.src="nagarebosi.png";
+        img.onload=function(){
+            ctx.drawImage(img,0,0,300,300);
+        };
+    }
     
     // ButtonAがクリックされた時の処理
     function btnAClick(e){
@@ -205,7 +218,9 @@
         
     }
     function btnDClick(e){
-        
+        active=false;
+        alarm2();
+
     }
     
  
@@ -238,7 +253,7 @@
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button> 
     <button id="btnC">Set</button> 
-    <button id="btnD">Stop</button> 
+    <button id="btnD">Hoshi</button> 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
      
     <input type="number" id="minute" value=0 >
